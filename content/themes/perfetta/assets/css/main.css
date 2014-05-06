@@ -37,7 +37,10 @@ body {
 	font-weight: 300;
 	line-height: 1.6;
 }
-body.default-bg { background: url('../images/tree_bark.png') top center repeat; }
+body.default-bg {
+	background: url('../images/tree_bark.png') top center repeat;
+	background-attachment: fixed;
+}
 a {
 	color: #34495e;
 	text-decoration: none;
@@ -219,6 +222,38 @@ body.loaded .blog-desc {
 	-ms-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
+
+/*---------------------------------
+2.3	Menu
+----------------------------------*/
+button.toggle-menu.menu-left.push-body {
+	width: 1.25em;
+	top: -2em;
+	left: 0;
+  position: absolute;
+  border: none;
+  background: none;
+  text-indent: -9999px;
+}
+
+button.toggle-menu.menu-left.push-body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25em;
+  height: 0.2em;
+  background: #34495e;
+  box-shadow:
+    0 0.40em 0 0 #34495e,
+    0 0.80em 0 0 #34495e;
+}
+
+button.toggle-menu.menu-left.push-body:focus {
+	outline: 0;
+}
+
+
 /*---------------------------------
 2.2 Footer
 ----------------------------------*/
@@ -428,8 +463,13 @@ footer.page-wrap > div { margin-left: 170px; }
 .post .post-readmore:active,
 .post .post-readmore:focus,
 .post .post-readmore:hover {
-	border-color: #34373b;
-	color: #34373b;
+	color: white;
+	background: #34495e;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-ms-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
 }
 .post-header img:first-child,
 .post-header video:first-child,
@@ -518,6 +558,9 @@ footer.page-wrap > div { margin-left: 170px; }
 	float: left;
 	margin: 24px 40px 20px 0;
 	overflow: hidden;
+	border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	-webkit-border-radius: 1000px;
 }
 .author .post-author-avatar img {
 	display: block;
@@ -572,6 +615,33 @@ footer.page-wrap > div { margin-left: 170px; }
 }
 .full-width + footer.page-wrap > div {
 	margin-left: 0;
+}
+
+input[type="submit"] {
+	border: 1px solid #34495e;
+	color: #34495e;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 40px 0 0 0;
+	padding: 0 40px;
+	text-transform: uppercase;
+	background: none;
+	-webkit-transition-property: top, bottom;
+  -webkit-transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover {
+	color: white;
+	background: #34495e;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-ms-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
 }
 
 /*---------------------------------

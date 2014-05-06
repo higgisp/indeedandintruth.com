@@ -1,4 +1,5 @@
 <header id="logo" class="page-wrap">
+    <button class="toggle-menu menu-left push-body">menu</button>
     {{#if @blog.logo}}
     	<a id="logo-image" href="{{@blog.url}}">
     		<img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
@@ -11,4 +12,5 @@
 	    	<a href="{{@blog.url}}">{{@blog.description}}</a>
 	    </h2>
     {{/if}}
+
 </header>
