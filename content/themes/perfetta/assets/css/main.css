@@ -654,6 +654,7 @@ input[type="submit"]:hover {
 	}
 	body.default-bg {
 		background: url('../images/tree_bark.png') top center repeat;
+		background-attachment: fixed;
 	}
 }
 
@@ -767,6 +768,7 @@ input[type="submit"]:hover {
 @media (max-width: 480px) {
 	body.default-bg {
 		background: url('../images/tree_bark.png') top center repeat;
+		background-attachment: fixed;
 	}
 	.blog-title {
 		font-size: 42px;
