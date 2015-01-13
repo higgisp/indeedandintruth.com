@@ -1,6 +1,5 @@
 // # Ghost Configuration
 // Setup your Ghost install for various environments
-// Documentation can be found at http://docs.ghost.org/usage/configuration/
 
 var path = require('path'),
     config;
@@ -9,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://my-ghost-blog.com',
+        url: 'http://indeedandintruth.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -38,9 +37,6 @@ config = {
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
-        },
-        paths: {
-            contentPath: path.join(__dirname, '/content/')
         }
     },
 
@@ -48,7 +44,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://indeedandintruth.com',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -81,8 +77,7 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '2369'
-        },
-        logging: false
+        }
     },
 
     // ### Travis
@@ -98,8 +93,7 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '2369'
-        },
-        logging: false
+        }
     },
 
     // ### Travis
@@ -119,8 +113,7 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '2369'
-        },
-        logging: false
+        }
     },
 
     // ### Travis
@@ -140,8 +133,7 @@ config = {
         server: {
             host: '127.0.0.1',
             port: '2369'
-        },
-        logging: false
+        }
     }
 };
 
